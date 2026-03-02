@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kadwa:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+================================
+Table of Contents
+================================
+1. Basic Style Rules
+    1a. Colour Variables
+    1b. Core Rules
+    1c. Navigation Button Rules
+2. Layouts
+    2a. Smartphone Hamburger Menu
+    2b. Banner Layout
+    2c. Hero Layout
+    2d. Navigation Bar Layout 
+    2e. Showcase Sections
+    2f. Showcase Slideshows
+    2g. Contact Form
+    2h. Footer 1
+    2i. Footer 2
+    2j. Social Links
+    2k. Site Map
+    2l. Social Link Buttons
+    2m. Copyright
+3. Media Queries
+    Table Layout Section
+        3a. Basics
+        3b. Banner
+        3c. Hero
+        3d. NavBar
+        3e. Main Section
+        3f. Footer
+    Smartphone Layout Section
+        3g. Basics
+        3h. Hamburger Menu
+        3i. Banner
+        3j. Hero
+        3k. Navbar
+        3l. Main
+        3m. Footer
+*/
+
+/*1. Basic Layout Rules*/
+
+/* 1a. colour variables */
+:root{
+    --light_green: #C0DDC9;
+    --mid_green: #009D6F;
+    --dark_green: #005C3F;
+    --cust_orange: #DC6328;
+}
+
+/* Core Rules*/
+body
+{
+    margin: 0px;
+}
+
+h1
+{
+font-family: "Exo 2", sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  margin-left: 36px;
+  margin-top: 40px;
+}
+
+h2
+{
+font-family: "Exo 2", sans-serif;
+font-size: 2.25em;
+font-weight: 700;
+color: var(--dark_green);
+margin-top: 0px;
+margin-bottom: 35px;
+}
+
+h3
+{
+font-family: "Exo 2", sans-serif;
+  font-size: 2.25em;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  margin-left: 36px;
+  margin-top: 40px;
+}
+
+h4
+{
+font-family: "Kadwa", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--cust_orange);
+    margin: 0px;
+}
+
+h5
+{
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #005C3F;
+    margin: 0px;
+    margin-top: 21px;
+}
+
+::placeholder
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: black;
+
+}
+
+.button
+{
+    background-color: var(--dark_green);
+    width: 123px;
+    height: 55px;
+    border: none;
+    font-size: 1.5em;
+    border-radius: 48px;
+    color: #fff;
+    align-self: flex-end;
+    margin-top: 3px;
+}
+
+/* Navigation Button Rules */
+.navButton
+{
+    display: flex;
+    width: 184px;
+    height: 65px;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navButton:hover
+{
+    background-color: var(--light_green);
+}
+
+.navButton:active
+{
+    background-color: var(--cust_orange);
+}
+
+.navButton p
+{  
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Layouts */
+
+/* 2a. Smartphone Hamburger Menu - visible only when screen width is 480px or less */
+#menuButton
+{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+
+#menuButton img
+{
+    width: 40px;
+    height: 40px;
+}
+
+#main-menu
+{
+    padding-left: 0px;
+    margin: 0px;
+}
+
+#main-menu li a
+{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    display: flex;
+    background-color: var(--mid_green);
+    color: #fff;
+    width: 92px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#main-menu li a:hover
+{
+    background-color: var(--light_green);
+}
+
+#main-menu li a:active
+{
+    background-color: var(--cust_orange);
+}
+
+.menu-toggle
+{
+    display: none;
+}
+
+/* 2b. Banner Layout */
+#banner
+{
+    background-color: var(--dark_green);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#banner img
+{
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
+
+/* 2c. Hero Layout */
+#hero
+{
+    background-color: var(--light_green);
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+#hero img
+{
+    /*object-fit:;*/
+}
+
+/* 2d. Navigation Bar */
+#navbar
+{
+    background-color: var(--mid_green);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+}
+
+#navbar a
+{
+    text-decoration: none;
+}
+
+/* Main Body Layout */
+
+/* 2e. Showcase Sections*/
+.showcase
+{
+    margin: 0px 29px 0px 28px;
+    overflow: auto;
+}
+
+.showcase:first-child
+{
+    margin-top: 24px;
+}
+
+/* Showcase Slideshows */
+.projects
+{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 63px;
+}
+
+.projects img
+{
+    width: 373px;
+}
+
+.projects a
+{
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+/* 2g Contact Form */
+#contact
+{
+    margin-bottom: 65px;
+}
+
+#commsMain
+{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+/* Name and Email Entry */
+#comms1
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#comms1 input
+{
+    width: 275px;
+    height: 34px;
+    border-style: none;
+    background-color: #F3F3F3;
+}
+
+
+/* Message */
+#comms2
+{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#comms2 h5
+{
+    margin-top: 13px;
+}
+
+#formMessage textarea
+{
+    width: 100%;
+    height:228px;
+    padding: 0px;
+    border-style: none;
+    background-color: #F3F3F3;
+}
+
+#formName
+{
+    margin-right: 41px;
+}
+
+/* Footer Sections*/
+
+/* 2h. Footer 1*/
+#foot1
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--dark_green);
+    padding: 52px 62px 0px 62px;
+    justify-content: space-between;
+}
+
+
+/* 2i. Footer 2 */
+#foot2
+{
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--dark_green);
+    padding: 32px 32px 0px 28px;
+    justify-content: space-between;
+}
+
+#foot2 img
+{
+    width: 40px;
+}
+
+#foot2 p
+{
+    font-family: "Kadwa", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+}
+
+.footerItem
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*2j. Social Links*/
+#socialLinks
+{
+    flex-direction: column;
+    margin-right: 98px;
+}
+
+#socialLinks2
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+#icons
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#icons img
+{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
+/* 2k. Site Map */
+#sitemap
+{
+    flex-direction: row;
+}
+
+.mapList
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 46px;
+}
+
+.mapList ul, li
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.9vw;
+    list-style-type: none;
+}
+
+.mapList ul
+{   margin-top: 0px;
+    padding-left: 0px;
+}
+
+.mapList li
+{
+    margin-left: 22px;
+    margin-top: 23px;
+    font-size: 1em;
+}
+
+.mapList li:first-child
+{
+    margin-left: 0px;
+}
+
+.mapList a
+{
+    margin-bottom: 23px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mapList a:hover
+{
+    text-decoration: underline;
+}
+
+.mapList a:active
+{
+    color: var(--cust_orange);
+    text-decoration: underline;
+}
+
+
+/* Social Link Buttons*/
+#social1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#social2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#social1 img
+{
+    width: 40px;
+}
+
+#social2 img
+{
+    width: 40px;
+}
+
+#social1 h4
+{
+    margin-top: -7px;
+    margin-bottom: 69px;
+    font-size: 1.125em;
+}
+
+#social2 h4
+{
+    margin-top: -7px;
+    font-size: 1.125em;
+}
+
+#social1 p
+{
+    font-family: "Kadwa", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+}
+
+#social2 p
+{
+    font-family: "Kadwa", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+    margin: 0;
+}
+
+/* Copyright Section */
+#copyright
+{
+    color: #fff;
+    margin: 0px;
+    padding-top: 33px;
+    padding-bottom: 22px;
+    background-color: var(--dark_green);
+}
+
+#copyright p
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+    font-style: normal;
+    text-align: center;
+}
+
+
+/* Media Queries*/
+
+/* Desktop Browser Adjustments*/
+/*@media screen and (max-width: 1187px)
+{
+    h1
+    {
+        font-size: 2.1em;
+    }
+    h3
+    {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 958px)
+{
+    h1
+    {
+        font-size: 1.125em;
+    }
+    h3
+    {
+        font-size: 1.75em;
+    }
+
+}*/
+
+/* Table Layout Section */
+@media screen and (max-width: 768px)
+{
+    /* 3a. Basics */
+    h2
+    {
+        font-size: 1.875em;*/
+        margin-bottom: 21px;
+    }
+
+    h5
+    {
+        font-size: 1.25em;
+    }
+
+    /* 3b. Banner */
+    #banner img
+    {
+        width: 248px;
+    }
+
+    /* 3c. Hero */
+    #hero h1
+    {  
+        font-size: 1.9em;
+        margin-top: 16px;
+        margin-left: 21px;
+    }
+
+    #hero h3
+    {
+        font-size: 1.5em;
+        margin-left: 21px;
+    }
+
+    #hero img 
+    {
+        width: 308px;
+        height: auto;
+    }
+
+    /* 3d. NavBar*/
+    .navButton
+    {
+        width: 184px;
+        height: 43px;
+    }
+
+    .navButton p
+    {
+        font-size: 1.5em;
+    }
+
+    /*Main Section*/
+    .showcase
+    {
+        margin: 0px 27px 0px 28px;
+    }
+    .button
+    {
+        width: 99px;
+        height: 37px;
+        font-size: 1.125em;
+    }
+    .projects
+    {
+        margin-bottom: 45px;
+    }
+
+    #contact
+    {
+        margin-bottom: 57px;
+    }
+
+    #commsMain
+    {
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    #comms1
+    {
+        justify-content: space-between;
+    }
+
+    #comms1 input 
+    {
+        width: 328px;
+    }
+
+    #formName
+    {
+        margin-right: 15px;
+    }
+
+    #comms1 h5
+    {
+        margin-top: 0px;
+    }
+    
+    /*Footer*/
+    #foot1
+    {
+        display: none;
+    }
+
+    #foot2
+    {
+        display: flex;
+    }
+
+    #social h4
+    {
+        margin-bottom: 15px;
+    }
+
+    .mapList:first-child
+    {
+        margin-left: 21px;
+    }
+
+    .mapList ul
+    {
+        padding-left: 0px;
+        font-size: 2.25vw;
+    }
+
+    #copyright
+    {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+}
+
+/* Smartphone Layout Section*/
+@media screen and (max-width: 480px)
+{
+    /* 3g. Basics */
+    h2
+    {
+        font-size: 1.5em;
+        margin-bottom: 9px;
+    }
+
+    /* 3h. Hamburger Menu */
+    #menuButton
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items:end;
+    }
+
+    /* 3i. Banner */
+    #banner img
+    {
+        width: 165px;
+    }
+
+    /* 3j. Hero*/
+    #hero img
+    {
+        display: none;
+    }
+
+    #hero h1
+    {  
+        font-size: 5.5vw;
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    #hero h3
+    {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 19px;
+        font-size: 1.1em;
+    }
+
+    /* 3k. Navbar */
+    #navbar
+    {
+        display: none;
+    }
+
+    /* 3l. Main */
+    .showcase
+    {
+        margin: 0px 27px 0px 28px;
+    }
+
+    .showcase:first-child
+    {
+        margin-top: 8px;
+    }
+
+    .projects img
+    {
+        width: 165px;
+    }
+
+    .projects
+    {
+        margin-bottom: 17px;
+    }
+
+    .projects a
+    {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .showcase
+    {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    #commsMain
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #contact
+    {
+        margin-bottom: 33px;
+    }
+
+    #comms1
+    {
+        flex-direction: column;
+    }
+
+    #comms1 input
+    {
+        width: 100%;
+    }
+
+    #formName
+    {
+        margin-right: 0px;
+    }
+
+    #formMessage textarea
+    {
+        width: 100%;
+        height:288px;
+        padding: 0px;
+        border-style: none;
+        background-color: #F3F3F3;
+    }
+    
+    .button
+    {
+        width: 66px;
+        height: 25px;
+        font-size: 0.875em;
+    }
+
+    /* 3m. footer*/
+    #foot2
+    {
+        padding-top: 10px;
+    }
+
+    #foot2 h4
+    {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 1em;
+    }
+
+    #foot2 p
+    {
+        font-size: 1.5em;
+    }
+
+    #footTitle
+    {
+        align-self: center;
+        font-size: 1.5em;
+    }
+
+    #siteMap2
+    {
+        display: none;
+    }
+
+    #copyright p
+    {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>David Henry - Web Developer, Graphic Designer</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <script src="./js/java.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <!--  -->
+        <!-- smartphone hamburger menu button - appears only at screen width of 480px or less-->
+            <div id="menuButton">
+                <img src="./img/menuButton.png" alt="Menu Button" onclick="toggleMenu()">
+                <ul id="main-menu" class="menu-toggle">
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Skillsets</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        <!-- banner section -->    
+            <section id="banner">
+                <img src="./img/logo_title.png" alt="David Henry Designs Logo" width="372">
+            </section>
+        <!-- hero section - image disappears at screen width of 480px or less -->
+            <section id="hero">    
+                <div>
+                    <h1>GREETINGS, FELLOW HUMANS!</h1>
+                    <h3>I’m David! I help companies find their style and 
+                        apply it to their branding, whether they’re an 
+                        e-commerce business or a local shop! 
+                        Take a look around and see what I have to offer!</h3>
+                </div>
+                <img src="./img/portrait.png" alt="A head shot photo of David Henry">       
+            </section>
+        <!-- navigation bar - appears at screen width above 480px -->
+            <nav id="navbar">
+                <a href="#">
+                    <div class="navButton">
+                        <p>About Me</p> 
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="navButton">
+                        <p>Skillsets</p> 
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="navButton">
+                        <p>Portfolio</p> 
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="navButton">
+                        <p>Contact</p> 
+                    </div>
+                </a>
+            </nav>
+        </header>
+
+        <main id="main">
+        <!-- Showcase - Latest Work -->
+            <section id="latest" class="showcase">
+                <h2>Latest Work</h2>
+                <div class="projects">
+                    <a href="#"><img src="./img/ASCC_StyleGuide_Image.jpg" alt="Amethyst Scale Crafts Company logo"></a>
+                    <a href="#"><img src="./img/BAB_StyleGuide_Image.jpg" alt="Bad Ass Baking Company logo"></a>
+                    <a href="#"><img src="./img/Moordeep_Image.jpg" alt="Moordeep Crypts Title Page"></a>
+                    <a href="#"><img src="./img/WerewolfQRef_Image.jpg" alt="Werewolf: The Apocalypse Quickstart Book"></a>
+                </div>
+            </section>
+        <!-- Showcase - Branding & Style Guides -->
+            <section id="guides" class="showcase">
+                <h2>Branding & Style Guides</h2>
+                <div class="projects">
+                    <a href="#"><img src="./img/ASCC_StyleGuide_Image.jpg" alt="Amethyst Scale Crafts Company logo"></a>
+                    <a href="#"><img src="./img/BAB_StyleGuide_Image.jpg" alt="Bad Ass Baking Company logo"></a>
+                </div>
+            </section>
+        <!-- Showcase - Pet Projects -->
+            <section id="pet" class="showcase">
+                <h2>Pet Projects</h2>
+                <div class="projects">
+                    <a href="#"><img src="./img/WerewolfQRef_Image.jpg" alt="Werewolf: The Apocalypse Quickstart Book"></a>
+                    <a href="#"><img src="./img/DeGlassia_Image.jpg" alt="DeGlassia Heist Adventure Book cover"></a>
+                    <a href="#"><img src="./img/Moordeep_Image.jpg" alt="Moordeep Crypts Title Page"></a>
+                </div>
+            </section>
+        <!-- Contact Form -->
+            <section id="contact" class="showcase">
+                <h2>Commissions & Other Inquiries</h2>
+                <form method="post" id="commsMain">
+                    <div id="comms1">
+                        <div id="formName">
+                            <label for="name"></label>
+                            <h5>Name</h5>
+                            <input type="text" id="name" name="name" placeholder="Type your name here">
+                        </div>
+                        <div id="formEmail">
+                            <label for="email"></label>
+                            <h5>Email Address</h5>
+                            <input type="text" id="email" name="email" placeholder="Type your email here">
+                        </div>
+                    </div>
+                    <div id="comms2">
+                        <div id="formMessage">
+                            <label for="message"></label>
+                            <h5>Message</h5>
+                            <textarea id="message" name="message" placeholder="Type your message here"></textarea>
+                        </div>
+                        <button class="button">Send</button>
+                    </div>
+                    
+                </form>
+            </section>
+        </main>
+
+        <footer id="footer">
+
+        <!-- Footer 1 - Appears when screen width is above 768px -->
+            <section id="foot1">
+            
+            <!-- Social Links -->
+                <div class="footerItem" id="socialLinks">
+                    <div id="social1">
+                        <h4>DAVID HENRY DESIGNS</h4>
+                        <div>
+                            <p>Follow Me On Social Media</p>
+                            <a href="#">
+                                <img src="./img/linkedin-icon.png" alt="link to David Henry's linked in profile">
+                            </a>
+                            <a href="#">
+                                <img src="./img/bluesky-Icon.png" alt="link to David Henry's blue sky profile">
+                            </a>
+                            <a href="#">
+                                <img src="./img/mastodon-Icon.png" alt="link to David Henry's mastodon profile">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            <!--Site Map -->
+                <div class="footerItem" id="siteMap1">
+                    <div id="aboutMap1" class="mapList">
+                        <ul>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Story</a></li>
+                            <li><a href="#">What I Do</a></li>
+                            <li><a href="#">My Approach</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="skillsetMap1" class="mapList">
+                        <ul>
+                            <li><a href="#">Skillsets</a></li>
+                            <li><a href="#">Coding</a></li>
+                            <li><a href="#">Graphic Design</a></li>
+                            <li><a href="#">Game Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="portfolioMap1" class="mapList">
+                        <ul>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Branding</a></li>
+                            <li><a href="#">Print Media</a></li>
+                            <li><a href="#">Pet Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="contactMa1p" class="mapList">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Story</a></li>
+                            <li><a href="#">What I Do</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        
+        <!-- Footer 2 - Appears when screen width is above 768px. Some elements disappear when screen width is 
+                480px or less -->
+            <section id="foot2">
+
+            <!-- Footer Title -->
+                <div class="footerItem" id="footTitle">
+                    <div id="social2">
+                        <h4>DAVID HENRY DESIGNS</h4>
+                    </div>
+                </div>
+
+            <!-- Site Map - Disappears when screen width is 480px or less -->
+                <div class="footerItem" id="siteMap2">
+                    <div id="aboutMap2" class="mapList">
+                        <ul>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Story</a></li>
+                            <li><a href="#">What I Do</a></li>
+                            <li><a href="#">My Approach</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="skillsetMap2" class="mapList">
+                        <ul>
+                            <li><a href="#">Skillsets</a></li>
+                            <li><a href="#">Coding</a></li>
+                            <li><a href="#">Graphic Design</a></li>
+                            <li><a href="#">Game Design</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="portfolioMap2" class="mapList">
+                        <ul>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Branding</a></li>
+                            <li><a href="#">Print Media</a></li>
+                            <li><a href="#">Pet Projects</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="contactMap2" class="mapList">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Story</a></li>
+                            <li><a href="#">What I Do</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            <!-- Social Links - Disappears when screen width is 480px or less -->
+                <div class="footerItem" id="socialLinks2">
+                <p>Follow Me On Social Media</p>
+                    <div id="icons">
+                        <a href="#">
+                            <img src="./img/linkedin-icon.png" alt="link to David Henry's linked in profile">
+                        </a>
+                        <a href="#">
+                            <img src="./img/bluesky-Icon.png" alt="link to David Henry's blue sky profile">
+                        </a>
+                        <a href="#">
+                            <img src="./img/mastodon-Icon.png" alt="link to David Henry's mastodon profile">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Copyright Information -->
+            <section id="copyright">
+                <p>&copy; David Henry All Rights Reserved</p>
+            </section>
+        </footer>
+    </body>
+
+</html>
