@@ -12,17 +12,21 @@
             <!--  -->
         <!-- smartphone hamburger menu button - appears only at screen width of 480px or less-->
             <div id="menuButton">
+
                 <img src="./img/menuButton.png" alt="Menu Button" onclick="toggleMenu()">
+
                 <ul id="main-menu" class="menu-toggle">
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Skillsets</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./skillsets.html">Skillsets</a></li>
+                    <li><a href="./portfolio/portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                 </ul>
             </div>
         <!-- banner section -->    
             <section id="banner">
-                <img src="./img/logo_title.png" alt="David Henry Designs Logo" width="372">
+                <a href="index.html">
+                    <img src="./img/logo_title.png" alt="David Henry Designs Logo" width="372">
+                </a>
             </section>
         <!-- hero section - image disappears at screen width of 480px or less -->
             <section id="hero">    
@@ -37,29 +41,18 @@
             </section>
         <!-- navigation bar - appears at screen width above 480px -->
             <nav id="navbar">
-                <a href="#">
-                    <div class="navButton">
-                        <p>About Me</p> 
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="navButton">
-                        <p>Skillsets</p> 
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="navButton">
-                        <p>Portfolio</p> 
-                    </div>
-                </a>
-
-                <a href="#">
-                    <div class="navButton">
-                        <p>Contact</p> 
-                    </div>
-                </a>
+                <div class="navButton">
+                    <a href="./about.html"><p>About Me</p></a> 
+                </div>
+                <div class="navButton">
+                    <a href="./skillsets.html"><p>Skillsets</p></a>
+                </div>
+                <div class="navButton">
+                    <a href="./portfolio/portfolio.html"><p>Portfolio</p></a> 
+                </div>
+                <div class="navButton">
+                    <a href="./contact.html"><p>Contact</p></a> 
+                </div>
             </nav>
         </header>
 
@@ -68,55 +61,29 @@
             <section id="latest" class="showcase">
                 <h2>Latest Work</h2>
                 <div class="projects">
-                    <a href="#"><img src="./img/ASCC_StyleGuide_Image.jpg" alt="Amethyst Scale Crafts Company logo"></a>
-                    <a href="#"><img src="./img/BAB_StyleGuide_Image.jpg" alt="Bad Ass Baking Company logo"></a>
-                    <a href="#"><img src="./img/Moordeep_Image.jpg" alt="Moordeep Crypts Title Page"></a>
-                    <a href="#"><img src="./img/WerewolfQRef_Image.jpg" alt="Werewolf: The Apocalypse Quickstart Book"></a>
+                    <a href="./portfolio/wodDiceRoller.html"><img src="./img/WoD_DR_Image.jpg" alt="WoD Dice Roller image"></a>
+                    <a href="./portfolio/matchGame.html"><img src="./img/matchGame_image.jpg" alt="Card Matching Game"></a>
+                    <a href="./portfolio/aasc_styleGuide.html"><img src="./img/ASCC_StyleGuide_Image.jpg" alt="Amethyst Scale Crafts Company logo"></a>
+                    <a href="./portfolio/bab_StyleGuide.html"><img src="./img/BAB_StyleGuide_Image.jpg" alt="Bad Ass Baking Company logo"></a>
+                    <a href="./portfolio/moordeepCrypts.html"><img src="./img/Moordeep_Image.jpg" alt="Moordeep Crypts Title Page"></a>
                 </div>
             </section>
         <!-- Showcase - Branding & Style Guides -->
             <section id="guides" class="showcase">
                 <h2>Branding & Style Guides</h2>
                 <div class="projects">
-                    <a href="#"><img src="./img/ASCC_StyleGuide_Image.jpg" alt="Amethyst Scale Crafts Company logo"></a>
-                    <a href="#"><img src="./img/BAB_StyleGuide_Image.jpg" alt="Bad Ass Baking Company logo"></a>
+                    <a href="./portfolio/aasc_styleGuide.html"><img src="./img/ASCC_StyleGuide_Image.jpg" alt="Amethyst Scale Crafts Company logo"></a>
+                    <a href="./portfolio/bab_StyleGuide.html"><img src="./img/BAB_StyleGuide_Image.jpg" alt="Bad Ass Baking Company logo"></a>
                 </div>
             </section>
         <!-- Showcase - Pet Projects -->
             <section id="pet" class="showcase">
                 <h2>Pet Projects</h2>
                 <div class="projects">
-                    <a href="#"><img src="./img/WerewolfQRef_Image.jpg" alt="Werewolf: The Apocalypse Quickstart Book"></a>
-                    <a href="#"><img src="./img/DeGlassia_Image.jpg" alt="DeGlassia Heist Adventure Book cover"></a>
-                    <a href="#"><img src="./img/Moordeep_Image.jpg" alt="Moordeep Crypts Title Page"></a>
+                    <a href="./portfolio/wodDiceRoller.html"><img src="./img/WoD_DR_Image.jpg" alt="World Of Darkness 5th Edition Dice Roller"></a>
+                    <a href="./portfolio/werewolfGuide.html"><img src="./img/WerewolfQRef_Image.jpg" alt="Werewolf: The Apocalypse Quickstart Book"></a>
+                    <a href="./portfolio/moordeepCrypts.html"><img src="./img/Moordeep_Image.jpg" alt="Moordeep Crypts Title Page"></a>
                 </div>
-            </section>
-        <!-- Contact Form -->
-            <section id="contact" class="showcase">
-                <h2>Commissions & Other Inquiries</h2>
-                <form method="post" id="commsMain">
-                    <div id="comms1">
-                        <div id="formName">
-                            <label for="name"></label>
-                            <h5>Name</h5>
-                            <input type="text" id="name" name="name" placeholder="Type your name here">
-                        </div>
-                        <div id="formEmail">
-                            <label for="email"></label>
-                            <h5>Email Address</h5>
-                            <input type="text" id="email" name="email" placeholder="Type your email here">
-                        </div>
-                    </div>
-                    <div id="comms2">
-                        <div id="formMessage">
-                            <label for="message"></label>
-                            <h5>Message</h5>
-                            <textarea id="message" name="message" placeholder="Type your message here"></textarea>
-                        </div>
-                        <button class="button">Send</button>
-                    </div>
-                    
-                </form>
             </section>
         </main>
 
@@ -131,14 +98,8 @@
                         <h4>DAVID HENRY DESIGNS</h4>
                         <div>
                             <p>Follow Me On Social Media</p>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/in/david-henry-72b44546/">
                                 <img src="./img/linkedin-icon.png" alt="link to David Henry's linked in profile">
-                            </a>
-                            <a href="#">
-                                <img src="./img/bluesky-Icon.png" alt="link to David Henry's blue sky profile">
-                            </a>
-                            <a href="#">
-                                <img src="./img/mastodon-Icon.png" alt="link to David Henry's mastodon profile">
                             </a>
                         </div>
                     </div>
@@ -148,36 +109,34 @@
                 <div class="footerItem" id="siteMap1">
                     <div id="aboutMap1" class="mapList">
                         <ul>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">Story</a></li>
-                            <li><a href="#">What I Do</a></li>
-                            <li><a href="#">My Approach</a></li>
+                            <li><a href="./about.html">About Me</a></li>
+                            <li><a href="./about.html#myStory">Story</a></li>
+                            <li><a href="./about.html#whatIDo">What I Do</a></li>
+                            <li><a href="./about.html#myApproach">My Approach</a></li>
                         </ul>
                     </div>
 
                     <div id="skillsetMap1" class="mapList">
                         <ul>
-                            <li><a href="#">Skillsets</a></li>
-                            <li><a href="#">Coding</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Game Design</a></li>
+                            <li><a href="./skillsets.html">Skillsets</a></li>
+                            <li><a href="./skillsets.html#codingSect">Coding</a></li>
+                            <li><a href="./skillsets.html#graphicDesign">Graphic Design</a></li>
+                            <li><a href="./skillsets.html#gameDesign">Game Design</a></li>
                         </ul>
                     </div>
 
                     <div id="portfolioMap1" class="mapList">
                         <ul>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Branding</a></li>
-                            <li><a href="#">Print Media</a></li>
-                            <li><a href="#">Pet Projects</a></li>
+                            <li><a href="./portfolio/portfolio.html">Portfolio</a></li>
+                            <li><a href="./portfolio/portfolio.html#webDevSect">Web Development</a></li>
+                            <li><a href="./portfolio/portfolio.html#brandingSect">Branding & Style</a></li>
+                            <li><a href="./portfolio/portfolio.html#petProjectsSect">Pet Projects</a></li>
                         </ul>
                     </div>
 
-                    <div id="contactMa1p" class="mapList">
+                    <div id="contactMap1" class="mapList">
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Story</a></li>
-                            <li><a href="#">What I Do</a></li>
+                            <li><a href="./contact.html">Contact</a></li>                          
                         </ul>
                     </div>
                 </div>
@@ -198,36 +157,34 @@
                 <div class="footerItem" id="siteMap2">
                     <div id="aboutMap2" class="mapList">
                         <ul>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">Story</a></li>
-                            <li><a href="#">What I Do</a></li>
-                            <li><a href="#">My Approach</a></li>
+                            <li><a href="./about.html">About Me</a></li>
+                            <li><a href="./about.html#myStory">Story</a></li>
+                            <li><a href="./about.html#whatIDo">What I Do</a></li>
+                            <li><a href="./about.html#myApproach">My Approach</a></li>
                         </ul>
                     </div>
 
                     <div id="skillsetMap2" class="mapList">
                         <ul>
-                            <li><a href="#">Skillsets</a></li>
-                            <li><a href="#">Coding</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Game Design</a></li>
+                            <li><a href="./skillsets.html">Skillsets</a></li>
+                            <li><a href="./skillsets.html#codingSect">Coding</a></li>
+                            <li><a href="./skillsets.html#graphicDesign">Graphic Design</a></li>
+                            <li><a href="./skillsets.html#gameDesign">Game Design</a></li>
                         </ul>
                     </div>
 
                     <div id="portfolioMap2" class="mapList">
                         <ul>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">Branding</a></li>
-                            <li><a href="#">Print Media</a></li>
-                            <li><a href="#">Pet Projects</a></li>
+                            <li><a href="./portfolio/portfolio.html">Portfolio</a></li>
+                            <li><a href="./portfolio/portfolio.html#webDevSect">Web Development</a></li>
+                            <li><a href="./portfolio/portfolio.html#brandingSect">Branding & Style</a></li>
+                            <li><a href="./portfolio/portfolio.html#petProjectsSect">Pet Projects</a></li>
                         </ul>
                     </div>
 
                     <div id="contactMap2" class="mapList">
                         <ul>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Story</a></li>
-                            <li><a href="#">What I Do</a></li>
+                            <li><a href="./contact.html">Contact</a></li>                          
                         </ul>
                     </div>
                 </div>
@@ -236,14 +193,8 @@
                 <div class="footerItem" id="socialLinks2">
                 <p>Follow Me On Social Media</p>
                     <div id="icons">
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/david-henry-72b44546/">
                             <img src="./img/linkedin-icon.png" alt="link to David Henry's linked in profile">
-                        </a>
-                        <a href="#">
-                            <img src="./img/bluesky-Icon.png" alt="link to David Henry's blue sky profile">
-                        </a>
-                        <a href="#">
-                            <img src="./img/mastodon-Icon.png" alt="link to David Henry's mastodon profile">
                         </a>
                     </div>
                 </div>

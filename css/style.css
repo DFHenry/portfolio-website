@@ -58,23 +58,23 @@ body
 
 h1
 {
-font-family: "Exo 2", sans-serif;
-  font-size: 3em;
-  font-weight: 700;
-  font-style: normal;
-  color: #fff;
-  margin-left: 36px;
-  margin-top: 40px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    font-style: normal;
+     color: #fff;
+    /* margin-left: 36px; */
+    margin-top: 40px;
 }
 
 h2
 {
-font-family: "Exo 2", sans-serif;
-font-size: 2.25em;
-font-weight: 700;
-color: var(--dark_green);
-margin-top: 0px;
-margin-bottom: 35px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 2.25em;
+    font-weight: 700;
+    color: var(--dark_green);
+    margin-top: 0px;
+    margin-bottom: 35px;
 }
 
 h3
@@ -105,6 +105,13 @@ h5
     color: #005C3F;
     margin: 0px;
     margin-top: 21px;
+}
+
+p
+{
+    font-family: "Exo 2", sans-serif;
+    font-size: 1.25em;
+    color: #000;
 }
 
 ::placeholder
@@ -242,14 +249,19 @@ h5
 #hero
 {
     background-color: var(--light_green);
-    display: flex;
-    justify-content: end;
-    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.heroGrid
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 #hero img
 {
-    /*object-fit:;*/
+    width: 100%;
 }
 
 /* 2d. Navigation Bar */
@@ -276,6 +288,11 @@ h5
     overflow: auto;
 }
 
+.showcase h1
+{
+    color: #005C3F;
+}
+
 .showcase:first-child
 {
     margin-top: 24px;
@@ -298,6 +315,101 @@ h5
 {
     margin-left: 23px;
     margin-right: 23px;
+}
+
+/*Main Article Template*/
+
+.mainArticle h1
+{
+    color: #005C3F;
+}
+
+.mainArticle a
+{
+    font-family: "Kadwa", sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--cust_orange);
+    margin: 0px;
+}
+
+.mainArticle img
+{
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.bodyParagraph
+{
+    margin: 0 56px 0 56px;
+}
+
+.imageGrid
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.gridImg
+{
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+}
+
+.behanceWrapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.behanceItem
+{
+    height: 632px;
+    width: 808px;
+}
+
+.imageRow
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.imageRow img
+{
+    width: 200px;
+    border-style: none;
+}
+
+.approachGrid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.approachItem
+{
+    margin: 10px;
+}
+
+.approachItem h3
+{
+    color: #005C3F;
+}
+
+.linkRow
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.linkImage
+{
+    width: 200px;
+    border-style: none;
 }
 
 /* 2g Contact Form */
@@ -490,7 +602,7 @@ h5
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #social2
@@ -566,38 +678,85 @@ h5
 /* Media Queries*/
 
 /* Desktop Browser Adjustments*/
-/*@media screen and (max-width: 1187px)
+@media screen and (max-width: 1227px)
 {
-    h1
+    #hero h1
     {
         font-size: 2.1em;
     }
-    h3
+    #hero h3
     {
         font-size: 2em;
     }
+
+
 }
 
-@media screen and (max-width: 958px)
+@media screen and (max-width: 1096px)
 {
-    h1
+    #hero h1
     {
-        font-size: 1.125em;
+        font-size: 1.9em;
     }
-    h3
+    #hero h3
     {
         font-size: 1.75em;
     }
 
-}*/
+    #socialLinks
+    {
+        margin-right: 48px;
+    }
 
-/* Table Layout Section */
+    .mapList li
+    {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 967px)
+{
+    #hero h3
+    {
+        font-size: 1.3em;
+    }
+    
+    socialLinks
+    {
+        font-size: 24px;
+    }
+
+    #social1 h4
+    {
+        font-size: 0.75em;
+    }
+
+    #social1 p
+    {
+        font-size: 1em;
+    }
+
+    .behanceItem
+    {
+        height: 474px;
+        width: 606px;
+    }
+
+}
+
+/* Tablet Layout Section */
 @media screen and (max-width: 768px)
 {
     /* 3a. Basics */
+
+    h1
+    {
+        font-size: 2em;
+    }
+
     h2
     {
-        font-size: 1.875em;*/
+        font-size: 1.875em;
         margin-bottom: 21px;
     }
 
@@ -615,14 +774,14 @@ h5
     /* 3c. Hero */
     #hero h1
     {  
-        font-size: 1.9em;
+        font-size: 1.5em;
         margin-top: 16px;
         margin-left: 21px;
     }
 
     #hero h3
     {
-        font-size: 1.5em;
+        font-size: 1.2em;
         margin-left: 21px;
     }
 
@@ -658,6 +817,28 @@ h5
     .projects
     {
         margin-bottom: 45px;
+    }
+
+    .mainArticle a
+    {
+        font-size: 1.25em;
+    }
+
+    .behanceItem
+    {
+        height: 316px;
+        width: 404px;
+    }
+
+    .approachGrid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .imageRow img
+    {
+        width: 125px;
+        border-style: none;
     }
 
     #contact
@@ -725,10 +906,35 @@ h5
     }
 }
 
+@media screen and (max-width: 619px)
+{
+    #hero h3
+    {
+        margin-top: 16px;
+        font-size: 1em;
+    }
+    .navButton p
+    {
+        font-size: 1em;
+    }
+
+    .approachGrid
+    {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 /* Smartphone Layout Section*/
 @media screen and (max-width: 480px)
 {
     /* 3g. Basics */
+
+    h1
+    {
+        font-size: 1.5em;
+    }
+
     h2
     {
         font-size: 1.5em;
@@ -748,6 +954,11 @@ h5
     #banner img
     {
         width: 165px;
+    }
+
+    #hero
+    {
+        grid-template-columns: 1fr;
     }
 
     /* 3j. Hero*/
@@ -811,6 +1022,12 @@ h5
         margin-left: 8px;
         margin-right: 8px;
     }
+
+    .imageGrid
+{
+    display: flex;
+    flex-direction: column;
+}
 
     #commsMain
     {
