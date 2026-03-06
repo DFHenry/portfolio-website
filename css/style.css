@@ -254,7 +254,7 @@ p
 
 #hero h1
 {
-    padding-left: 36px;
+    margin-left: 36px;
 }
 
 .heroGrid
@@ -912,10 +912,27 @@ p
 
 @media screen and (max-width: 619px)
 {
+    #hero
+    {
+            grid-template-columns: 1fr;
+    }
+
+    #hero h1
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #hero h3
     {
         margin-top: 16px;
         font-size: 1em;
+    }
+
+    #hero img
+    {
+        display: none;
     }
     .navButton p
     {
@@ -966,10 +983,6 @@ p
     }
 
     /* 3j. Hero*/
-    #hero img
-    {
-        display: none;
-    }
 
     #hero h1
     {  
