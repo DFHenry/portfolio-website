@@ -63,7 +63,6 @@ h1
     font-weight: 700;
     font-style: normal;
      color: #fff;
-    /* margin-left: 36px; */
     margin-top: 40px;
 }
 
@@ -251,6 +250,11 @@ p
     background-color: var(--light_green);
     display: grid;
     grid-template-columns: 2fr 1fr;
+}
+
+#hero h1
+{
+    padding-left: 36px;
 }
 
 .heroGrid
