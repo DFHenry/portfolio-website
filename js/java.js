@@ -79,8 +79,8 @@ window.onload = function()
                                                         '<img src="./img/ASCC_StyleGuide_Image.jpg" alt="Amethyst Scale Crafts Company logo">' +
                                                     '</div>' +
                                                     '<div class="flip-card-back">' +
-                                                        '<h3>Bad Ass Baking Company</h3>' +
-                                                        '<p>A Branding & Style Guide</p>' +
+                                                        '<h3>Amethyst Scale Crafts Co. Style Guide</h3>' +
+                                                        '<p>A branding guide an travelling crafts company</p>' +
                                                         '<a href="./portfolio/aasc_styleGuide.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
@@ -92,8 +92,8 @@ window.onload = function()
                                                        '<img src="./img/BAB_StyleGuide_Image.jpg" alt="Bad Ass Baking Company logo">' +
                                                     '</div>' +
                                                     '<div class="flip-card-back">' +
-                                                        '<h3>Dave\'s Great* Match Memory Game</h3>' +
-                                                        '<p>An animated memory match game</p>' +
+                                                        '<h3>Bad Ass Baking Company</h3>' +
+                                                        '<p>A branding Guide for an edgy bakery</p>' +
                                                         '<a href="./portfolio/bab_StyleGuide.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
@@ -105,8 +105,8 @@ window.onload = function()
                                                         '<img src="./img/Moordeep_Image.jpg" alt="Moordeep Crypts Title Page">' +
                                                     '</div>' +
                                                     '<div class="flip-card-back">' +
-                                                        '<h3>Dave\'s Great* Match Memory Game</h3>' +
-                                                        '<p>An animated memory match game</p>' +
+                                                        '<h3>Moordeep Crypts</h3>' +
+                                                        '<p>An Dungeons & Dragons Adventure</p>' +
                                                         '<a href="./portfolio/moordeepCrypts.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
@@ -130,7 +130,7 @@ window.onload = function()
                                                 '</div>' +
                                                 '<div class="flip-card-back">' +
                                                     '<h3>Amethyst Scale Crafts Co. Style Guide</h3>' +
-                                                    '<p>A branding guide an travelling crafts company</p>' +
+                                                    '<p>A branding guide a travelling crafts company</p>' +
                                                     '<a href="./portfolio/aasc_styleGuide.html">Click Here</a>' +
                                                 '</div>' +
                                             '</div>' +
