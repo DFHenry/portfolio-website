@@ -25,7 +25,7 @@ window.onload = function()
                 '<img src="./img/logo_title.png" alt="David Henry Designs Logo" width="372">' + 
             '</a>';
         }
-        
+
         if(portBanner != null)
         {
             portBanner.innerHTML = '<a href="https://davidfhenry.com/index.html">' + 
@@ -38,16 +38,16 @@ window.onload = function()
     function getNavBar()
     {
         navbar.innerHTML = '<div class="navButton">' + 
-                                '<a href="./about.html"><p>About Me</p></a>' + 
+                                '<a href="https://davidfhenry.com/about.html"><p>About Me</p></a>' + 
                             '</div>' + 
                             '<div class="navButton">' + 
-                                '<a href="./skillsets.html"><p>Skillsets</p></a>' + 
+                                '<a href="https://davidfhenry.com/skillsets.html"><p>Skillsets</p></a>' + 
                             '</div>' + 
                             '<div class="navButton">' + 
-                                '<a href="./portfolio/portfolio.html"><p>Portfolio</p></a>' + 
+                                '<a href="https://davidfhenry.com/portfolio/portfolio.html"><p>Portfolio</p></a>' + 
                             '</div>' + 
                             '<div class="navButton">' + 
-                            '<a href="./contact.html"><p>Contact</p></a>' + 
+                            '<a href="https://davidfhenry.com/contact.html"><p>Contact</p></a>' + 
                             '</div>';
     }
 
