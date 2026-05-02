@@ -243,6 +243,20 @@ p
     padding-bottom: 14px;
 }
 
+#portBanner
+{
+    background-color: var(--dark_green);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#portBanner img
+{
+    padding-top: 15px;
+    padding-bottom: 14px;
+}
+
 /* 2c. Hero Layout */
 #hero
 {
@@ -864,6 +878,11 @@ p
         width: 248px;
     }
 
+    #portBanner img
+    {
+        width: 248px;
+    }
+
     /* 3c. Hero */
     #hero h1
     {  
@@ -1068,6 +1087,11 @@ p
 
     /* 3i. Banner */
     #banner img
+    {
+        width: 165px;
+    }
+
+    #portBanner img
     {
         width: 165px;
     }

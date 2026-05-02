@@ -2,6 +2,7 @@ window.onload = function()
 {
     //reusable html components
     let banner = document.getElementById('banner');
+    let portBanner = document.getElementById('portBanner');
     let navbar = document.getElementById('navbar');
     let recent = document.getElementById('recent');
     let branding = document.getElementById('branding');
@@ -18,10 +19,20 @@ window.onload = function()
 
     function getBanner()
     {
-        console.log(banner);
-        banner.innerHTML = '<a href="index.html">' + 
-                                '<img src="./img/logo_title.png" alt="David Henry Designs Logo" width="372">' + 
-                            '</a>';
+        if(banner != null)
+        {
+            banner.innerHTML = '<a href="https://davidfhenry.com/index.html">' + 
+                '<img src="./img/logo_title.png" alt="David Henry Designs Logo" width="372">' + 
+            '</a>';
+        }
+        
+        if(portBanner != null)
+        {
+            portBanner.innerHTML = '<a href="https://davidfhenry.com/index.html">' + 
+                '<img src="../img/logo_title.png" alt="David Henry Designs Logo" width="372">' + 
+            '</a>';
+        }
+
     }
 
     function getNavBar()
