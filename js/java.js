@@ -118,7 +118,7 @@ window.onload = function()
                                                     '<div class="flip-card-back">' +
                                                         '<h3>Moordeep Crypts</h3>' +
                                                         '<p>An Dungeons & Dragons Adventure</p>' +
-                                                        '<a href="./portfolio/moordeepCrypts.html">Click Here</a>' +
+                                                        '<a href="https://davidfhenry.com/portfolio/moordeepCrypts.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
