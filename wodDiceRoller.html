@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>David Henry - Web Developer, Graphic Designer</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <script src="./js/java.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <!--  -->
+        <!-- smartphone hamburger menu button - appears only at screen width of 480px or less-->
+            <div id="menuButton">
+
+                <img src="./img/menuButton.png" alt="Menu Button" onclick="toggleMenu()">
+
+                <ul id="main-menu" class="menu-toggle">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skillsets.html">Skillsets</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        <!-- banner section -->    
+            <section id="banner"></section>
+            
+        <!-- navigation bar - appears at screen width above 480px -->
+            <nav id="navbar"></nav>
+
+        </header>
+
+        <main id="main">
+
+        <!-- Conntent Below -->
+
+            <section class="mainArticle">
+                <div class="bodyParagraph">
+                    <h1>World Of Darkness 5th Edition Dice Roller</h1>
+                    <p>
+                        This is one of my first web development projects. It is a dice roller for all three of the current World of Darkness
+                        5th Edition Table-Top Role-Playing Games created by White Wolf Publishing. The dice roller is meant for players who
+                        do not have a set of dice to play the games. While it is primarily meant for smart phones use, it can be used on tablet 
+                        or desktop just as easily.
+                    </p>
+                    <img src="./img/WoD_DR_1.jpg" alt="Screenshot of the WoD dice roller">
+                    <p>
+                        The site uses HTML, CSS, and vanilla JavaScript for the dice logic.
+                    </p>
+                    <p>
+                        Feel free to browse the screenshots or use the dice roller yourself by following the link below!
+                    </p>
+
+                    <a href="https://dfhenry.github.io/WoD_DiceRoller/">World of Darkness 5th Edition Dice Roller</a>
+                    
+                    <div class="imageGrid">
+                        <img class="gridImg" src="./img/WoD_DR_2.jpg" alt="Screenshot of the WoD dice roller">
+                        <img class="gridImg" src="./img/WoD_DR_3.jpg" alt="Screenshot of the WoD dice roller">
+                        <img class="gridImg" src="./img/WoD_DR_4.jpg" alt="Screenshot of the WoD dice roller">
+                    </div>
+                </div>
+
+            </section>
+            <br>
+        <!-- Showcase - Latest Work -->
+            <section id="latest" class="showcase">
+                <div id="recent"></div>
+            </section>
+        </main>
+
+        <footer id="footer"></footer>
+    </body>
+
+</html>

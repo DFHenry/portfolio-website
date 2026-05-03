@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>David Henry - Web Developer, Graphic Designer</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <script src="./js/java.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <!--  -->
+        <!-- smartphone hamburger menu button - appears only at screen width of 480px or less-->
+            <div id="menuButton">
+
+                <img src="./img/menuButton.png" alt="Menu Button" onclick="toggleMenu()">
+
+                <ul id="main-menu" class="menu-toggle">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skillsets.html">Skillsets</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        <!-- banner section -->    
+            <section id="banner"></section>
+
+        <!-- navigation bar - appears at screen width above 480px -->
+            <nav id="navbar"></nav>
+        </header>
+
+        <main id="main">
+
+        <!-- Conntent Below -->
+
+            <section class="mainArticle">
+                <div class="bodyParagraph">
+                    <h1>Animated Match Game</h1>
+                    <p>
+                        A small game I created to get animations and basic logic for games. Select two cards, if they match, you get a point.
+                        Match all pairs of cards to win!
+                    </p>
+                    <img src="./img/matchGame_1.jpg" alt="Screenshot of the WoD dice roller">
+                    <p>
+                        The site uses HTML, CSS, and vanilla JavaScript for the game logic.
+                    </p>
+                    <p>
+                        Feel free to browse the screenshots or play the game yourself by following the link below!
+                    </p>
+
+                    <a target="_blank" href="https://dfhenry.github.io/cardMatchGame/"><h4>Animated Match Game</h4></a>
+                </div>
+
+            </section>
+            <br>
+        <!-- Showcase - Latest Work -->
+            <div id="recent"></div>
+        </main>
+
+        <footer id="footer"></footer>
+    </body>
+
+</html>

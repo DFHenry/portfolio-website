@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>David Henry - Web Developer, Graphic Designer</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <script src="./js/java.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <!--  -->
+        <!-- smartphone hamburger menu button - appears only at screen width of 480px or less-->
+            <div id="menuButton">
+
+                <img src="./img/menuButton.png" alt="Menu Button" onclick="toggleMenu()">
+
+                <ul id="main-menu" class="menu-toggle">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skillsets.html">Skillsets</a></li>
+                    <li><a href="portfolio/portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        <!-- banner section -->    
+            <section id="banner"></section>
+
+        <!-- navigation bar - appears at screen width above 480px -->
+            <nav id="navbar"></nav>
+        </header>
+
+        <main id="main">
+
+        <!-- Content Below -->
+
+            <section class="mainArticle">
+                <div class="bodyParagraph">
+                    <h1>Werewolf: The Apocalypse Quick Reference Guide</h1>
+                    <p>
+                        This booklet is meant for players of the Table-Top Role-Playing Game Werewolf: The Apocalypse to quickly
+                        reference common rules and concepts at the table without having to open the core rulebook. It contains
+                        the rules for basic dice rolls, shapeshifting, common game lore, and a notes section.
+                    </p>
+                    <img src="./img/WtA_QuickReferenceGuide_Mockup1.png" alt="Amethy Scale Crafts Co. Logo">
+                    <p>
+                        This guide can be easily printed out on any home printer, and only requires a couple of staples to bind
+                        and a pair of scissors to trim the bottom seam to create the booklet.
+                    </p>
+                    <p>
+                        To see more of this booklet, or download it yourself, click on the download link or check out the behance 
+                        link below!
+                    </p>
+                    <a target="_blank" href="./WtA_QuickReferenceGuide_Print.pdf">Download Werewolf: The Apocalypse 5th Edition Quick Reference Guide</a>
+                    <div class="behanceWrapper">
+                        <iframe style="display:none" class="behanceItem" src="https://www.behance.net/embed/project/203581887?ilo0=1" allowfullscreen></iframe>
+                        <iframe class="behanceItem" src="https://www.behance.net/embed/project/177465415?ilo0=1" allowfullscreen></iframe>                    
+                    </div>
+                </div>
+            </section>
+            <br>
+        <!-- Showcase - Latest Work -->
+            <section id="latest" class="showcase">
+                <div id="recent"></div>
+            </section>
+        </main>
+
+        <footer id="footer"></footer>
+    </body>
+
+</html>

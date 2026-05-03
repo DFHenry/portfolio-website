@@ -21,15 +21,15 @@ window.onload = function()
     {
         if(banner != null)
         {
-            banner.innerHTML = '<a href="https://davidfhenry.com/index.html">' + 
+            banner.innerHTML = '<a href="index.html">' + 
                 '<img src="./img/logo_title.png" alt="David Henry Designs Logo" width="372">' + 
             '</a>';
         }
 
         if(portBanner != null)
         {
-            portBanner.innerHTML = '<a href="https://davidfhenry.com/index.html">' + 
-                '<img src="../img/logo_title.png" alt="David Henry Designs Logo" width="372">' + 
+            portBanner.innerHTML = '<a href="index.html">' + 
+                '<img src="./img/logo_title.png" alt="David Henry Designs Logo" width="372">' + 
             '</a>';
         }
 
@@ -38,16 +38,16 @@ window.onload = function()
     function getNavBar()
     {
         navbar.innerHTML = '<div class="navButton">' + 
-                                '<a href="https://davidfhenry.com/about.html"><p>About Me</p></a>' + 
+                                '<a href="about.html"><p>About Me</p></a>' + 
                             '</div>' + 
                             '<div class="navButton">' + 
-                                '<a href="https://davidfhenry.com/skillsets.html"><p>Skillsets</p></a>' + 
+                                '<a href="skillsets.html"><p>Skillsets</p></a>' + 
                             '</div>' + 
                             '<div class="navButton">' + 
-                                '<a href="https://davidfhenry.com/portfolio/portfolio.html"><p>Portfolio</p></a>' + 
+                                '<a href="portfolio.html"><p>Portfolio</p></a>' + 
                             '</div>' + 
                             '<div class="navButton">' + 
-                            '<a href="https://davidfhenry.com/contact.html"><p>Contact</p></a>' + 
+                            '<a href="contact.html"><p>Contact</p></a>' + 
                             '</div>';
     }
 
@@ -66,7 +66,7 @@ window.onload = function()
                                                     '<div class="flip-card-back">' +
                                                         '<h3>World of Darkness 5th Edition Dice Roller</h3>' +
                                                         '<p>A mobile-designed dice rolling app</p>' +
-                                                        '<a href="./portfolio/wodDiceRoller.html">Click Here</a>' +
+                                                        '<a href="wodDiceRoller.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
@@ -79,7 +79,7 @@ window.onload = function()
                                                     '<div class="flip-card-back">' +
                                                         '<h3>Dave\'s Great* Match Memory Game</h3>' +
                                                         '<p>An animated memory match game</p>' +
-                                                        '<a href="./portfolio/matchGame.html">Click Here</a>' +
+                                                        '<a href="matchGame.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
@@ -92,7 +92,7 @@ window.onload = function()
                                                     '<div class="flip-card-back">' +
                                                         '<h3>Amethyst Scale Crafts Co. Style Guide</h3>' +
                                                         '<p>A branding guide an travelling crafts company</p>' +
-                                                        '<a href="./portfolio/aasc_styleGuide.html">Click Here</a>' +
+                                                        '<a href="aasc_styleGuide.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
@@ -105,7 +105,7 @@ window.onload = function()
                                                     '<div class="flip-card-back">' +
                                                         '<h3>Bad Ass Baking Company</h3>' +
                                                         '<p>A branding Guide for an edgy bakery</p>' +
-                                                        '<a href="./portfolio/bab_StyleGuide.html">Click Here</a>' +
+                                                        '<a href="bab_StyleGuide.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
@@ -118,7 +118,7 @@ window.onload = function()
                                                     '<div class="flip-card-back">' +
                                                         '<h3>Moordeep Crypts</h3>' +
                                                         '<p>An Dungeons & Dragons Adventure</p>' +
-                                                        '<a href="https://davidfhenry.com/portfolio/moordeepCrypts.html">Click Here</a>' +
+                                                        '<a href="moordeepCrypts.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
@@ -142,7 +142,7 @@ window.onload = function()
                                                 '<div class="flip-card-back">' +
                                                     '<h3>Amethyst Scale Crafts Co. Style Guide</h3>' +
                                                     '<p>A branding guide a travelling crafts company</p>' +
-                                                    '<a href="./portfolio/aasc_styleGuide.html">Click Here</a>' +
+                                                    '<a href="aasc_styleGuide.html">Click Here</a>' +
                                                 '</div>' +
                                             '</div>' +
                                         '</div>' +
@@ -155,7 +155,7 @@ window.onload = function()
                                                 '<div class="flip-card-back">' +
                                                     '<h3>Bad Ass Baking Company Style Guide</h3>' +
                                                     '<p>A branding Guide for an edgy bakery</p>' +
-                                                    '<a href="./portfolio/bab_StyleGuide.html">Click Here</a>' +
+                                                    '<a href="bab_StyleGuide.html">Click Here</a>' +
                                                 '</div>' +
                                             '</div>' +
                                         '</div>' +
@@ -179,7 +179,7 @@ window.onload = function()
                                                     '<div class="flip-card-back">' +
                                                         '<h3>World of Darkness 5th Edition Dice Roller</h3>' +
                                                         '<p>A mobile-designed dice rolling app</p>' +
-                                                        '<a href="./portfolio/wodDiceRoller.html">Click Here</a>' +
+                                                        '<a href="wodDiceRoller.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
@@ -192,7 +192,7 @@ window.onload = function()
                                                     '<div class="flip-card-back">' +
                                                         '<h3>Werewolf: the Apocalypse Quick Reference Guide</h3>' +
                                                         '<p>A printable guide for new players</p>' +
-                                                        '<a href="./portfolio/werewolfGuide.html">Click Here</a>' +
+                                                        '<a href="werewolfGuide.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
@@ -205,7 +205,7 @@ window.onload = function()
                                                     '<div class="flip-card-back">' +
                                                         '<h3>Moordeep Crypts</h3>' +
                                                         '<p>An Dungeons & Dragons Adventure</p>' +
-                                                        '<a href="./portfolio/moordeepCrypts.html">Click Here</a>' +
+                                                        '<a href="moordeepCrypts.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
@@ -237,34 +237,34 @@ window.onload = function()
                                     '<div class="footerItem" id="siteMap1">' +
                                         '<div id="aboutMap1" class="mapList">' +
                                             '<ul>' +
-                                                '<li><a href="./about.html">About Me</a></li>' +
-                                                '<li><a href="./about.html#myStory">Story</a></li>' +
-                                                '<li><a href="./about.html#whatIDo">What I Do</a></li>' +
-                                                '<li><a href="./about.html#myApproach">My Approach</a></li>' +
+                                                '<li><a href="about.html">About Me</a></li>' +
+                                                '<li><a href="about.html#myStory">Story</a></li>' +
+                                                '<li><a href="about.html#whatIDo">What I Do</a></li>' +
+                                                '<li><a href="about.html#myApproach">My Approach</a></li>' +
                                             '</ul>' +
                                         '</div>' +
 
                                         '<div id="skillsetMap1" class="mapList">' +
                                             '<ul>' +
-                                                '<li><a href="./skillsets.html">Skillsets</a></li>' +
-                                                '<li><a href="./skillsets.html#codingSect">Coding</a></li>' +
-                                                '<li><a href="./skillsets.html#graphicDesign">Graphic Design</a></li>' +
-                                                '<li><a href="./skillsets.html#gameDesign">Game Design</a></li>' +
+                                                '<li><a href="skillsets.html">Skillsets</a></li>' +
+                                                '<li><a href="skillsets.html#codingSect">Coding</a></li>' +
+                                                '<li><a href="skillsets.html#graphicDesign">Graphic Design</a></li>' +
+                                                '<li><a href="skillsets.html#gameDesign">Game Design</a></li>' +
                                             '</ul>' +
                                         '</div>' +
 
                                         '<div id="portfolioMap1" class="mapList">' +
                                             '<ul>' +
-                                                '<li><a href="./portfolio/portfolio.html">Portfolio</a></li>' +
-                                                '<li><a href="./portfolio/portfolio.html#webDevSect">Web Development</a></li>' +
-                                                '<li><a href="./portfolio/portfolio.html#brandingSect">Branding & Style</a></li>' +
-                                                '<li><a href="./portfolio/portfolio.html#petProjectsSect">Pet Projects</a></li>' +
+                                                '<li><a href="portfolio.html">Portfolio</a></li>' +
+                                                '<li><a href="portfolio.html#webDevSect">Web Development</a></li>' +
+                                                '<li><a href="portfolio.html#brandingSect">Branding & Style</a></li>' +
+                                                '<li><a href="portfolio.html#petProjectsSect">Pet Projects</a></li>' +
                                             '</ul>' +
                                         '</div>' +
 
                                         '<div id="contactMap1" class="mapList">' +
                                             '<ul>' +
-                                                '<li><a href="./contact.html">Contact</a></li>' +                          
+                                                '<li><a href="contact.html">Contact</a></li>' +                          
                                             '</ul>' +
                                         '</div>' +
                                     '</div>' +
@@ -284,34 +284,34 @@ window.onload = function()
                                     '<div class="footerItem" id="siteMap2">' +
                                         '<div id="aboutMap2" class="mapList">' +
                                             '<ul>' +
-                                                '<li><a href="./about.html">About Me</a></li>' +
-                                                '<li><a href="./about.html#myStory">Story</a></li>' +
-                                                '<li><a href="./about.html#whatIDo">What I Do</a></li>' +
-                                                '<li><a href="./about.html#myApproach">My Approach</a></li>' +
+                                                '<li><a href="about.html">About Me</a></li>' +
+                                                '<li><a href="about.html#myStory">Story</a></li>' +
+                                                '<li><a href="about.html#whatIDo">What I Do</a></li>' +
+                                                '<li><a href="about.html#myApproach">My Approach</a></li>' +
                                             '</ul>' +
                                         '</div>' +
 
                                         '<div id="skillsetMap2" class="mapList">'+
                                             '<ul>' +
-                                                '<li><a href="./skillsets.html">Skillsets</a></li>' +
-                                                '<li><a href="./skillsets.html#codingSect">Coding</a></li>' +
-                                                '<li><a href="./skillsets.html#graphicDesign">Graphic Design</a></li>' +
-                                                '<li><a href="./skillsets.html#gameDesign">Game Design</a></li>' +
+                                                '<li><a href="skillsets.html">Skillsets</a></li>' +
+                                                '<li><a href="skillsets.html#codingSect">Coding</a></li>' +
+                                                '<li><a href="skillsets.html#graphicDesign">Graphic Design</a></li>' +
+                                                '<li><a href="skillsets.html#gameDesign">Game Design</a></li>' +
                                             '</ul>' +
                                         '</div>' +
 
                                         '<div id="portfolioMap2" class="mapList">' +
                                             '<ul>' +
-                                                '<li><a href="./portfolio/portfolio.html">Portfolio</a></li>' +
-                                                '<li><a href="./portfolio/portfolio.html#webDevSect">Web Development</a></li>' +
-                                                '<li><a href="./portfolio/portfolio.html#brandingSect">Branding & Style</a></li>' +
-                                                '<li><a href="./portfolio/portfolio.html#petProjectsSect">Pet Projects</a></li>' +
+                                                '<li><a href="portfolio/portfolio.html">Portfolio</a></li>' +
+                                                '<li><a href="portfolio/portfolio.html#webDevSect">Web Development</a></li>' +
+                                                '<li><a href="portfolio/portfolio.html#brandingSect">Branding & Style</a></li>' +
+                                                '<li><a href="portfolio/portfolio.html#petProjectsSect">Pet Projects</a></li>' +
                                             '</ul>' +
                                         '</div>' +
 
                                         '<div id="contactMap2" class="mapList">' +
                                             '<ul>' +
-                                                '<li><a href="./contact.html">Contact</a></li>' +                          
+                                                '<li><a href="contact.html">Contact</a></li>' +                          
                                             '</ul>' +
                                         '</div>' +
                                     '</div>' +
