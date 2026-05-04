@@ -425,6 +425,42 @@ p
     padding-bottom: 10px;
 }
 
+/* grids */
+
+.gridItem1
+{
+    display: block;
+    margin-right: 10px;
+    grid-area: item1;
+}
+
+.gridItem2
+{
+    display: block;
+    grid-area: item2;
+}
+
+#myStory
+{
+    margin-bottom: 10px;
+}
+
+#aboutPhoto
+{
+    width: 1fr;
+    display: flex;
+    justify-content: center;
+}
+
+.myStoryGrid
+{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+        "item1 item2"
+        "item1 item2";
+}
+
 /*Main Article Template*/
 
 .mainArticle h1
@@ -797,6 +833,10 @@ p
         font-size: 2em;
     }
 
+    .myStoryGrid
+    {
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
 
@@ -848,6 +888,17 @@ p
     {
         height: 474px;
         width: 606px;
+    }
+
+    .myStoryGrid
+    {
+        grid-template-areas: 
+            "item 1 item1";
+    }
+
+    .myStoryGrid img
+    {
+        display: none;
     }
 }
 
