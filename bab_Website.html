@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>David Henry - Web Developer, Graphic Designer</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <script src="./js/java.js"></script>
+    </head>
+    <body>
+        <header id="header">
+
+        <!-- smartphone hamburger menu button - appears only at screen width of 480px or less-->
+            <div id="menuButton">
+
+                <img src="./img/menuButton.png" alt="Menu Button" onclick="toggleMenu()">
+
+                <ul id="main-menu" class="menu-toggle">
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./skillsets.html">Skillsets</a></li>
+                    <li><a href="./portfolio/portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+        <!-- banner section -->
+            <section id="banner"></section>
+
+        </header>
+
+        <!-- navigation bar - appears at screen width above 480px -->
+        <nav id="navbar"></nav>
+
+        <br>
+
+        <main id="main">
+
+            <section class="mainArticle">
+                <div class="bodyParagraph">
+                    <h1>Bad Ass Bakery - Front & Back End Websites</h1>
+                    <p>A website for an edgy bakery. The front-end site includes a list of products and services with a details page for each item, and an about page. This Front-End website uses React and connects to an API, which is controlled from a MongoDB database.</p>
+                    <a href="https://full-stack-web-dev-assignment3.vercel.app/">Front-End Website</a>
+                    <br />
+                    <img src="./img/BAB_Website_FrontEnd1.jpg" alt="The Bad Ass Baking Company Front Page"><br />
+                    <img src="./img/BAB_Website_FrontEnd2.jpg" alt="The Bad Ass Baking Company Website displaying the details of a chosen menu item"><br />
+                    <img src="./img/BAB_Website_FrontEnd3.jpg" alt="The Bad Ass Baking Company Website displaying a grid of products"><br />
+                    <p>The Back-End site is a CMS where an admin can add, edit, or remove products and services as needed and update the API accordingly. It uses node.js modules such as Express and Pug.</p>
+                    <a href="https://fullstackwebdev-assignment1-dh.onrender.com/">Back-End Dashboard Website</a>
+                    <br />
+                    <img src="./img/BAB_Website_BackEnd1.jpg" alt="The Bad Ass Baking Company dashboard login page"><br />
+                    <img src="./img/BAB_Website_BackEnd2.jpg" alt="The Bad Ass Baking Company admin dashboard"><br />
+                    <img src="./img/BAB_Website_BackEnd3.jpg" alt="The Bad Ass Baking Company edit product page"><br />
+                    
+                    <p>For the Branding & Style Guide for this project, <a href="https://davidfhenry.com/bab_StyleGuide.html" style="font-size: 1em;">Click Here</a>.</p>
+                    <h2>Work In Progress:</h2>
+                    <ul class="workInProgress">
+                        <li>Dashboard Login</li>
+                        <li>Shopping Cart/Online Orders</li>
+                    </ul>
+
+                </div>
+            </section>
+
+        <!-- Showcase - Latest Work -->
+            <div id="recent"></div>
+                
+            </div>
+        </main>
+
+        <footer id="footer"></footer>
+    </body>
+</html>

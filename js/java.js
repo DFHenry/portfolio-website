@@ -58,6 +58,20 @@ window.onload = function()
             recent.innerHTML = '<h2 class="showHeader">Latest Work</h2>' + 
                                     '<section id="latest" class="showcase">' +
                                         '<div class="projects">' +
+
+                                            '<div class="flip-card">' +
+                                                '<div class="flip-card-inner">' +
+                                                    '<div class = "flip-card-front">' +
+                                                        '<img src="./img/bab_Website_Image.jpg" alt="Bad Ass Bakery Website image">' +
+                                                    '</div>' +
+                                                    '<div class="flip-card-back">' +
+                                                        '<h3>Bad Ass Baking Company Website</h3>' +
+                                                        '<p>A website for an edgy bakery</p>' +
+                                                        '<a href="bab_Website.html">Click Here</a>' +
+                                                    '</div>' +
+                                                '</div>' +
+                                            '</div>' +
+
                                             '<div class="flip-card">' +
                                                 '<div class="flip-card-inner">' +
                                                     '<div class = "flip-card-front">' +
@@ -110,18 +124,6 @@ window.onload = function()
                                                 '</div>' +
                                             '</div>' +
 
-                                            '<div class="flip-card">' +
-                                                '<div class="flip-card-inner">' +
-                                                    '<div class="flip-card-front">' +
-                                                        '<img src="./img/Moordeep_Image.jpg" alt="Moordeep Crypts Title Page">' +
-                                                    '</div>' +
-                                                    '<div class="flip-card-back">' +
-                                                        '<h3>Moordeep Crypts</h3>' +
-                                                        '<p>An Dungeons & Dragons Adventure</p>' +
-                                                        '<a href="moordeepCrypts.html">Click Here</a>' +
-                                                    '</div>' +
-                                                '</div>' +
-                                            '</div>' +
                                         '</div>' +
                                     '</section>';
         }
