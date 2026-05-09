@@ -62,7 +62,7 @@ window.onload = function()
                                             '<div class="flip-card">' +
                                                 '<div class="flip-card-inner">' +
                                                     '<div class = "flip-card-front">' +
-                                                        '<img src="./img/bab_Website_Image.jpg" alt="Bad Ass Bakery Website image">' +
+                                                        '<img src="./img/BAB_Website_Image.jpg" alt="Bad Ass Bakery Website image">' +
                                                     '</div>' +
                                                     '<div class="flip-card-back">' +
                                                         '<h3>Bad Ass Baking Company Website</h3>' +
