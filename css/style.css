@@ -48,6 +48,7 @@ Table of Contents
     --mid_green: #009D6F;
     --dark_green: #005C3F;
     --cust_orange: #DC6328;
+    --light_orange: #ffcab0;
 }
 
 /* Core Rules*/
@@ -275,6 +276,12 @@ li
 #hero h1
 {
     margin-left: 36px;
+    color: var(--dark_green);
+}
+
+#hero h3
+{
+    color: var(--dark_green);
 }
 
 .heroGrid
@@ -632,6 +639,10 @@ li
     justify-content: space-between;
 }
 
+#foot1 h4
+{
+    color: var(--light_green);
+}
 
 /* 2i. Footer 2 */
 #foot2
@@ -658,6 +669,8 @@ li
     color: #fff;
     margin: 0;
 }
+
+
 
 .footerItem
 {
@@ -814,7 +827,6 @@ li
 /* Copyright Section */
 #copyright
 {
-    color: #fff;
     margin: 0px;
     padding-top: 33px;
     padding-bottom: 22px;
@@ -823,6 +835,7 @@ li
 
 #copyright p
 {
+    color: #fff;
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 0.875em;
