@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>David Henry - Web Developer, Graphic Designer</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <script src="./js/java.js"></script>
+    </head>
+    <body>
+        <header id="header">
+
+        <!-- smartphone hamburger menu button - appears only at screen width of 480px or less-->
+            <div id="menuButton">
+
+                <img src="./img/menuButton.png" alt="Menu Button" onclick="toggleMenu()">
+
+                <ul id="main-menu" class="menu-toggle">
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./skillsets.html">Skillsets</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+        <!-- banner section -->
+            <section id="banner"></section>
+
+        </header>
+
+        <!-- navigation bar - appears at screen width above 480px -->
+        <nav id="navbar"></nav>
+
+        <br>
+
+        <main id="main">
+
+            <section class="mainArticle">
+                <div class="bodyParagraph">
+                    <h1>Random Colour Palette Generator</h1>
+                    <p>
+                        This smaller project uses two external APIs, Colormind.io and The Color API, to generate a complimentary 5-colour palette for web developers to work with. It generates a 
+                        a new palette on refresh. Once generated, it not only gives the hex code of the colour, but the RGB, CMYK, and HSB values as well. Additionally, there is a button that copies all five
+                        hex codes onto the user's clipboard so they can be pasted into the root of a site's css file as css variables.
+                    </p>
+                    <img src="./img/ColorPalette_Image.jpg" alt="a screenshot of 5 colours in a colour palette with their various colour values listed below them, followed by a copy to clipboard button and the hex codes in a gray box.">
+                    <p>
+                        This was my first attempt to really use an external API on a website, so I wanted to do something simple but useful. Web developers are not always have the eye for colour, so I wanted
+                        to create a useful tool for them. The CMYK and HSB values that is output can also be handy for matching up colours when a project has both print and web components, ensuring a project's
+                        colour palette is uniform across multiple mediums.
+                    </p>
+                    <p>
+                        I used a second API, The Color API, to translate the palette Colormind produces from hex to the other formats, somehting Colormind does not have the functionality for. 
+                    </p>
+                    <p>
+                        I do have further plans for this, such as locking a color, then getting a new colour palette that compliments the locked colours on refresh. I'll likely do this with a cookie, remembering the locked
+                        variables between refreshes. Getting the Pantone codes is also a possibility, though that may prove trickier unless there's a third API for finding a pantone of a CMYK value.
+                    </p>
+                    <a target="_blank" href="https://random-colour-palette-generator.vercel.app/"><h4>Random Colour Palette Generator</h4></a>
+                </div>
+
+            </section>
+
+        <!-- Showcase - Latest Work -->
+            <div id="recent"></div>
+                
+        </main>
+
+        <footer id="footer"></footer>
+    </body>
+
+</html>

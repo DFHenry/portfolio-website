@@ -62,6 +62,19 @@ window.onload = function()
                                             '<div class="flip-card">' +
                                                 '<div class="flip-card-inner">' +
                                                     '<div class = "flip-card-front">' +
+                                                        '<img src="./img/ColorPalette_Image.jpg" alt="Random Colour Palette Generator image">' +
+                                                    '</div>' +
+                                                    '<div class="flip-card-back">' +
+                                                        '<h3>Random Colour Palette Generator</h3>' +
+                                                        '<p>Colour Palettes for Web Developers</p>' +
+                                                        '<a href="colorPalette.html">Click Here</a>' +
+                                                    '</div>' +
+                                                '</div>' +
+                                            '</div>' +
+
+                                            '<div class="flip-card">' +
+                                                '<div class="flip-card-inner">' +
+                                                    '<div class = "flip-card-front">' +
                                                         '<img src="./img/BAB_Website_Image.jpg" alt="Bad Ass Bakery Website image">' +
                                                     '</div>' +
                                                     '<div class="flip-card-back">' +
@@ -107,19 +120,6 @@ window.onload = function()
                                                         '<h3>Amethyst Scale Crafts Co. Style Guide</h3>' +
                                                         '<p>A branding guide an travelling crafts company</p>' +
                                                         '<a href="aasc_styleGuide.html">Click Here</a>' +
-                                                    '</div>' +
-                                                '</div>' +
-                                            '</div>' +
-
-                                            '<div class="flip-card">' +
-                                                '<div class="flip-card-inner">' +
-                                                    '<div class="flip-card-front">' +
-                                                       '<img src="./img/BAB_StyleGuide_Image.jpg" alt="Bad Ass Baking Company logo">' +
-                                                    '</div>' +
-                                                    '<div class="flip-card-back">' +
-                                                        '<h3>Bad Ass Baking Company</h3>' +
-                                                        '<p>A branding Guide for an edgy bakery</p>' +
-                                                        '<a href="bab_StyleGuide.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
