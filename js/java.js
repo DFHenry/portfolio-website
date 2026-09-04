@@ -12,7 +12,7 @@ window.onload = function()
     //functions to call html components
     getBanner();
     getNavBar();
-    getFooter()
+    getFooter();
     getRecent();
     getBranding();
     getPetProjects();
@@ -58,6 +58,19 @@ window.onload = function()
             recent.innerHTML = '<h2 class="showHeader">Latest Work</h2>' + 
                                     '<section id="latest" class="showcase">' +
                                         '<div class="projects">' +
+                                            
+                                            '<div class="flip-card">' +
+                                                '<div class="flip-card-inner">' +
+                                                    '<div class = "flip-card-front">' +
+                                                        '<img src="./img/Group20_Website_After_Desktop.png" alt="J Healthcare Initiative Project image">' +
+                                                    '</div>' +
+                                                    '<div class="flip-card-back">' +
+                                                        '<h3>The J Healthcare Initiative Homepage</h3>' +
+                                                        '<p>A revamped homepage for The J Healthcare Initiative</p>' +
+                                                        '<a href="jHealthcare.html">Click Here</a>' +
+                                                    '</div>' +
+                                                '</div>' +
+                                            '</div>' +
 
                                             '<div class="flip-card">' +
                                                 '<div class="flip-card-inner">' +
@@ -107,19 +120,6 @@ window.onload = function()
                                                         '<h3>Dave\'s Great* Match Memory Game</h3>' +
                                                         '<p>An animated memory match game</p>' +
                                                         '<a href="matchGame.html">Click Here</a>' +
-                                                    '</div>' +
-                                                '</div>' +
-                                            '</div>' +
-
-                                            '<div class="flip-card">' +
-                                                '<div class="flip-card-inner">' +
-                                                    '<div class="flip-card-front">' +
-                                                        '<img src="./img/ASCC_StyleGuide_Image.jpg" alt="Amethyst Scale Crafts Company logo">' +
-                                                    '</div>' +
-                                                    '<div class="flip-card-back">' +
-                                                        '<h3>Amethyst Scale Crafts Co. Style Guide</h3>' +
-                                                        '<p>A branding guide an travelling crafts company</p>' +
-                                                        '<a href="aasc_styleGuide.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +
