@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>David Henry - Web Developer, Graphic Designer</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <script src="./js/java.js"></script>
+    </head>
+    <body>
+        <header id="header">
+
+        <!-- smartphone hamburger menu button - appears only at screen width of 480px or less-->
+            <div id="menuButton">
+
+                <img src="./img/menuButton.png" alt="Menu Button" onclick="toggleMenu()">
+
+                <ul id="main-menu" class="menu-toggle">
+                    <li><a href="./about.html">About Me</a></li>
+                    <li><a href="./skillsets.html">Skillsets</a></li>
+                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+        <!-- banner section -->
+            <section id="banner"></section>
+
+        </header>
+
+        <!-- navigation bar - appears at screen width above 480px -->
+        <nav id="navbar"></nav>
+
+        <br>
+
+        <main id="main">
+
+            <section class="mainArticle">
+                <div class="bodyParagraph">
+                    <h1>RFID Race Tracker System</h1>
+                    <p>
+                        What had started as a group project during my second semester at Humber Polytechnic became my capstone project for the Web Development post-graduate program. This is a Race Tracking system that utizies RFID technology to track a racer's progress as they progress along a track in any type of race, whether it's go-carts, drones, or foot races. The system tracks the laps and pole positions of all racers registered in the system. 
+                    </p>
+                    <!-- image will go here -->
+                    <h2>Tehcnology Used</h2>
+                    <p>
+                        First, let's take a look at the hardware being used, aside from the computer the program is running on. The tracker uses an Arduino Uno R3 board with a RFID RC-522 reader connected to it, which can scan passive RFID tags when it one comes into its proximity. This is a placeholder for and Ultra-High Frequency reader and active tags. Under normal circumstances, these would be setup at a finish line, or potentially checkpoints along the racing path, where they could scan tags from five to ten metres away. From here, I used the code found on Arduino's Guides for setting up the software on the board itself. However, I have slightly modified it to output the actual hexidecimal code that is on an RFID tag.              
+                    </p>
+                    <p>
+                        From here, I used the MERN stack (MongoDB, Express, React, & NodeJS) for all of the coding. This software is meant to run on a single local machine rather than remotely. Additionally, the program uses SerialPort for handling the connection between the software and the RFID reader. This program operates with a MongoDB server running locally, so Compass is also necessary if you want to see all of the records on the database without this program.
+                    </p>
+                    <h2>Back-End CMS</h2>
+                    <p>
+                        The backend CMS allows users to add and manage vehicles (or the RFID wristbands for marathons or the like), check previous race records, and start and run races. With new vehicle registration, the user will not need to know what the code is on an RFID tag ahead of time as the Reader can scan a tag and add it to the new vehilce form automatically.
+                    </p>
+                    <p>
+                        This system also allows maintenace crews to put vehicles into a Maintenance mode so that those vehicles cannot be used in races. Those same crews can add maintenance logs to a vehicle as well when putting a vehicle back to being available.
+                    </p>
+                    <p>
+                        A race attendant with this program can start a new race and register racers for it. The system will assign each racer a vehicle as they register. Once all racers are reistered an attendant then puts the race into a 'race starting' mode. Once all racers are in position, the attendant can start the countdown, and the race begins. A countdown, followed by a stopwatch, will begin counting.
+                    </p>
+                    <p>
+                        As a racer moves across the finish line, the system registers their lap. The race attendant can see the lap time, total time in the race, pole position, and so on. Once all racers complete their laps, the timer stops, and the attendant can finish the race, displaying the final pole positions of each participating racer.
+                    </p>
+                    <h2>Front-End Display</h2>
+                    <p>
+                        The display end of the system is view-only, meant for racers and observers. However, as races start and end, the screen will change accordingly. Just as racers are registered, their names and vehicle numbers are displayed. Upon the race beginning, the screen prompts the racers to their vehicles. Once the attendent begins the race, just like the back-end, a countdown begins, then the stopwatch begins as racers begin the race.
+                    </p>
+                    <p>
+                        As racers pass the finish line, the display shows their lap time, pole position, and other relevant information. Once all racers complete a lap and ten seconds pass, the laps clear. Once the race is concluded, the race results are displayed as well with a congratulations to the winner.
+                    </p>
+                    <p>
+                        The code and all of the instructions on how to setup this system are on the GitHub repo linked below. 
+                    </p>
+
+                </div>
+            </section>
+
+        <!-- Showcase - Latest Work -->
+            <div id="recent"></div>
+                
+            </div>
+        </main>
+
+        <footer id="footer"></footer>
+    </body>
+
+</html>
