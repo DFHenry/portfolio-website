@@ -58,7 +58,20 @@ window.onload = function()
             recent.innerHTML = '<h2 class="showHeader">Latest Work</h2>' + 
                                     '<section id="latest" class="showcase">' +
                                         '<div class="projects">' +
-                                            
+
+                                            '<div class="flip-card">' +
+                                                '<div class="flip-card-inner">' +
+                                                    '<div class = "flip-card-front">' +
+                                                        '<img src="./img/RFID1.jpg" alt="RFID Race Tracking System">' +
+                                                    '</div>' +
+                                                    '<div class="flip-card-back">' +
+                                                        '<h3>RFID Race Tracking System</h3>' +
+                                                        '<p>A Racing Information Tracking System Utilizing RFID Technology</p>' +
+                                                        '<a href="rfidRaceTracker.html">Click Here</a>' +
+                                                    '</div>' +
+                                                '</div>' +
+                                            '</div>' +                                        
+
                                             '<div class="flip-card">' +
                                                 '<div class="flip-card-inner">' +
                                                     '<div class = "flip-card-front">' +
@@ -107,19 +120,6 @@ window.onload = function()
                                                         '<h3>World of Darkness 5th Edition Dice Roller</h3>' +
                                                         '<p>A mobile-designed dice rolling app</p>' +
                                                         '<a href="wodDiceRoller.html">Click Here</a>' +
-                                                    '</div>' +
-                                                '</div>' +
-                                            '</div>' +
-
-                                            '<div class="flip-card">' +
-                                                '<div class="flip-card-inner">' +
-                                                    '<div class="flip-card-front">' +
-                                                        '<img src="./img/matchGame_image.jpg" alt="Card Matching Game">' +
-                                                    '</div>' +
-                                                    '<div class="flip-card-back">' +
-                                                        '<h3>Dave\'s Great* Match Memory Game</h3>' +
-                                                        '<p>An animated memory match game</p>' +
-                                                        '<a href="matchGame.html">Click Here</a>' +
                                                     '</div>' +
                                                 '</div>' +
                                             '</div>' +

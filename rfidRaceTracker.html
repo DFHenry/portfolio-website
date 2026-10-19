@@ -41,11 +41,12 @@
                     <p>
                         What had started as a group project during my second semester at Humber Polytechnic became my capstone project for the Web Development post-graduate program. This is a Race Tracking system that utizies RFID technology to track a racer's progress as they progress along a track in any type of race, whether it's go-carts, drones, or foot races. The system tracks the laps and pole positions of all racers registered in the system. 
                     </p>
-                    <!-- image will go here -->
+                    <a href="file:///C:/Users/david/OneDrive/Desktop/portfolioWebsite/portfolio-website/rfidRaceTracker.html"><img src="./img/RFID1.jpg" alt="a screenshot of a website frontpage with a man in a go cart"></a>
                     <h2>Tehcnology Used</h2>
                     <p>
                         First, let's take a look at the hardware being used, aside from the computer the program is running on. The tracker uses an Arduino Uno R3 board with a RFID RC-522 reader connected to it, which can scan passive RFID tags when it one comes into its proximity. This is a placeholder for and Ultra-High Frequency reader and active tags. Under normal circumstances, these would be setup at a finish line, or potentially checkpoints along the racing path, where they could scan tags from five to ten metres away. From here, I used the code found on Arduino's Guides for setting up the software on the board itself. However, I have slightly modified it to output the actual hexidecimal code that is on an RFID tag.              
                     </p>
+                    <img src="./img/RFID2.jpg" alt="a top down view of an Arduino R3 board connected to a RFID-RC522 reader, and two RFID tags">
                     <p>
                         From here, I used the MERN stack (MongoDB, Express, React, & NodeJS) for all of the coding. This software is meant to run on a single local machine rather than remotely. Additionally, the program uses SerialPort for handling the connection between the software and the RFID reader. This program operates with a MongoDB server running locally, so Compass is also necessary if you want to see all of the records on the database without this program.
                     </p>
@@ -53,6 +54,7 @@
                     <p>
                         The backend CMS allows users to add and manage vehicles (or the RFID wristbands for marathons or the like), check previous race records, and start and run races. With new vehicle registration, the user will not need to know what the code is on an RFID tag ahead of time as the Reader can scan a tag and add it to the new vehilce form automatically.
                     </p>
+                    <img src="./img/RFID3.jpg" alt="the CMS for the RFID Race Tracking System">
                     <p>
                         This system also allows maintenace crews to put vehicles into a Maintenance mode so that those vehicles cannot be used in races. Those same crews can add maintenance logs to a vehicle as well when putting a vehicle back to being available.
                     </p>
@@ -63,6 +65,7 @@
                         As a racer moves across the finish line, the system registers their lap. The race attendant can see the lap time, total time in the race, pole position, and so on. Once all racers complete their laps, the timer stops, and the attendant can finish the race, displaying the final pole positions of each participating racer.
                     </p>
                     <h2>Front-End Display</h2>
+                    <img src="./img/RFID4.jpg" alt="a race info screen displaying the current time of the race and the pole positions of racers David and John">
                     <p>
                         The display end of the system is view-only, meant for racers and observers. However, as races start and end, the screen will change accordingly. Just as racers are registered, their names and vehicle numbers are displayed. Upon the race beginning, the screen prompts the racers to their vehicles. Once the attendent begins the race, just like the back-end, a countdown begins, then the stopwatch begins as racers begin the race.
                     </p>
@@ -72,6 +75,9 @@
                     <p>
                         The code and all of the instructions on how to setup this system are on the GitHub repo linked below. 
                     </p>
+                    <a href="https://github.com/DFHenry/RaceTracker_Back">RFID Race Tracking System - Back-End</a>
+                    <br>
+                    <a href="https://github.com/DFHenry/RaceTracker_Front">RFID Race Tracking System - Front-End</a>
 
                 </div>
             </section>
